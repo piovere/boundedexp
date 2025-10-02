@@ -16,9 +16,13 @@ features = ["pyo3/extension-module"]
 
 [dependency-groups]
 dev = [
-    "ipykernel>=6.29.5",
-    "marimo>=0.8.22",
     "maturin>=1.9.4",
     "mkdoc>=0.1",
     "pytest>=8.3.5",
+]
+speed = [
+    "cython>=3.1.4",
+    "ipykernel>=6.29.5",
+    "numba>=0.58.1",
+    "numpy>=1.24.4",
 ]
